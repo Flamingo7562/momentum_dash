@@ -4,15 +4,15 @@ const link = document.querySelector("a");
 const greeting = document.querySelector("#greeting");
 
 const HIDDEN_CLASSNAME = "hidden";
+const USERNAME_KEY = "username";
 // const loginInput = document.qeurySelector("#login-form input"); 이런식으로도 작성이 가능하다.
 
 function onLoginSubmit(tomato) {
   tomato.preventDefault();
   const username = loginInput.value;
-  localStorage.setItem("username", username);
+  localStorage.setItem(USERNAME_KEY, username);
   loginForm.classList.add(HIDDEN_CLASSNAME);
-  greeting.innerText = `Hello ${username}`;
-  greeting.classList.remove(HIDDEN_CLASSNAME);
+  paintGreetings(username);
 }
 
 function handleLinkClick(tomato) {
@@ -23,3 +23,18 @@ function handleLinkClick(tomato) {
 
 loginForm.addEventListener("submit", onLoginSubmit);
 link.addEventListener("click", handleLinkClick);
+
+function paintGreetings(username) {
+  greeting.classList.remove(HIDDEN_CLASSNAME);
+  greeting.innerText = `Hello ${username}`;
+}
+
+const savedUsername = localStorage.getItem(USERNAME_KEY);
+if (savedUsername === null) {
+  // show the login form
+  loginForm.classList.remove(HIDDEN_CLASSNAME);
+  loginForm.addEventListener("submit", onLoginSubmit);
+} else {
+  // show the greetings
+  paintGreetings(savedUsername);
+}
