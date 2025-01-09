@@ -1,3 +1,5 @@
+https://nomadcoders.co/javascript-for-beginners/lectures/2906/issues/1957
+
 첫 번째 질문은 변수의 범위(Scope) 관련한 질문입니다. 대부분의 언어에서는 함수 내부의 변수는 함수 내부에서만 참조가 가능합니다. 다시말해, 함수 외부에서는 함수 내부에 선언된 변수를 참조할 수 없습니다. 함수 내부에 선언한 변수는 지역변수(Local Variable)이라고 부릅니다.
 
 두 번째 질문은 JavaScript 언어는 Interpreter Language 이고, JS는 Hoisting 이라는 신기한 짓을 하기 때문에 발생하는 문제라고 생각됩니다.
