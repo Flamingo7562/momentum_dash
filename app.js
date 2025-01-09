@@ -9,6 +9,7 @@ const HIDDEN_CLASSNAME = "hidden";
 function onLoginSubmit(tomato) {
   tomato.preventDefault();
   const username = loginInput.value;
+  localStorage.setItem("username", username);
   loginForm.classList.add(HIDDEN_CLASSNAME);
   greeting.innerText = `Hello ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
