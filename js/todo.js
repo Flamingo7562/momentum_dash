@@ -11,7 +11,9 @@ function savePotatoes() {
 
 function deleteToDO(tomato) {
   const potato = tomato.target.parentElement;
+  potatoes = potatoes.filter((pot) => pot.id !== parseInt(potato.id));
   potato.remove();
+  savePotatoes();
 }
 
 function paintToDO(newTodo) {
