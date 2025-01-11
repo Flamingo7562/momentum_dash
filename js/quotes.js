@@ -1,11 +1,11 @@
 const quotes = [
   {
-    quote: "Hi",
-    author: "Flamingo",
+    quote: "Hello, Gigachad",
+    author: "- Flamingo",
   },
   {
-    quote: "Hello",
-    author: "Gigachad",
+    quote: "Hello, Flamingo",
+    author: "- Gigachad",
   },
 ];
 

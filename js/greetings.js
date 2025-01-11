@@ -1,6 +1,6 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = loginForm.querySelector("input");
-const link = document.querySelector("a");
+//const link = document.querySelector("a");
 const greeting = document.querySelector("#greeting");
 
 const HIDDEN_CLASSNAME = "hidden";
@@ -22,7 +22,7 @@ function handleLinkClick(tomato) {
 }
 
 loginForm.addEventListener("submit", onLoginSubmit);
-link.addEventListener("click", handleLinkClick);
+//link.addEventListener("click", handleLinkClick);
 
 function paintGreetings(username) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
