@@ -1,19 +1,49 @@
+:root {
+  --background-color: rgb(250, 235, 215, 0.4);
+  --basic-color: rgba(0, 0, 0, 0.8);
+  --basic-padding: 0px 20px;
+}
+
 body {
   background-color: wheat;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--basic-color);
 }
 
-h1 {
-  color: cornflowerblue;
-  transition: color 0.5s ease-in-out;
+#clock {
+  color: var(--basic-color);
+  font-size: 88px;
+  background-color: var(--background-color);
+  border-radius: 88px;
+  padding: var(--basic-padding);
+  margin-top: 200px;
 }
 
-.clicked {
-  color: tomato;
+#greeting {
+  font-size: 64px;
+  background-color: var(--background-color);
+  border-radius: 64px;
+  padding: var(--basic-padding);
+}
+
+#quote {
+  font-size: 32px;
+  background-color: var(--background-color);
+  border-radius: 32px;
+  padding: var(--basic-padding);
 }
 
 .sexy-font {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .hidden {

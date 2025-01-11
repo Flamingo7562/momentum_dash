@@ -6,34 +6,37 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Momentum</title>
   </head>
+
   <body>
-    <h2 id="clock">00:00:00</h2>
-    <form class="hidden" id="login-form">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name"
-      />
-      <input type="submit" value="Log In" />
-    </form>
+    <main>
+      <h2 id="clock">00:00:00</h2>
+      <form class="hidden" id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name"
+        />
+        <input type="submit" value="Log In" />
+      </form>
 
-    <h1 class="hidden" id="greeting">hidden</h1>
+      <h1 class="hidden" id="greeting">hidden</h1>
 
-    <form id="todo-form">
-      <input type="text" placeholder="Write What you have to do" />
-    </form>
-    <ul id="todo-list"></ul>
+      <form id="todo-form">
+        <input type="text" placeholder="Write What you have to do" />
+      </form>
+      <ul id="todo-list"></ul>
 
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
 
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+    </main>
 
     <script src="myapi.js"></script>
     <script src="js/greetings.js"></script>
