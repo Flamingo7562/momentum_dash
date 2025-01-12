@@ -25,8 +25,8 @@ function paintToDO(newTodo) {
   btn.addEventListener("click", deleteToDO);
 
   potato.id = newTodo.id;
-  potato.appendChild(span);
   potato.appendChild(btn);
+  potato.appendChild(span);
   span.innerText = newTodo.text;
   toDoList.appendChild(potato);
 }
