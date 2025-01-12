@@ -14,7 +14,7 @@ function onGeoOK(position) {
     });
 }
 function onGeoError() {
-  alert("Can't find your Geolocation.");
+  alert("당신의 위치가 어디오?");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOK, onGeoError);

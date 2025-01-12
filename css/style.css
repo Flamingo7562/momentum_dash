@@ -33,6 +33,32 @@ main {
   margin-top: 100px;
 }
 
+#login-form {
+  padding: 10px;
+  background-color: var(--background-color);
+  border-radius: 20px;
+  display: flex;
+}
+#login-form input:first-child {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 80px;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+#login-form input:first-child::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#login-form input:last-child {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid var(--basic-color);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+}
+
 #greeting {
   font-size: 64px;
   background-color: var(--background-color);
@@ -124,4 +150,5 @@ main {
 
 .hidden {
   display: none;
+  visibility: hidden;
 }

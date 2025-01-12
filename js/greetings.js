@@ -2,6 +2,7 @@ const loginForm = document.querySelector("#login-form");
 const loginInput = loginForm.querySelector("input");
 //const link = document.querySelector("a");
 const greeting = document.querySelector("#greeting");
+const potato = document.querySelector("#todo-form");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
@@ -26,7 +27,8 @@ loginForm.addEventListener("submit", onLoginSubmit);
 
 function paintGreetings(username) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
-  greeting.innerText = `Hello ${username}`;
+  potato.classList.remove(HIDDEN_CLASSNAME);
+  greeting.innerText = `반갑소 ${username}`;
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
